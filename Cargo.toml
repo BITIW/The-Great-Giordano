@@ -10,7 +10,7 @@ serde = { version = "1.0.219", features = ["derive"]}
 serde_json = "1.0"
 
 [profile.release]
-opt-level = 3      # Оптимизация для минимального размера бинарника
+opt-level = "z"      # Оптимизация для минимального размера бинарника
 lto = "fat"           # Link Time Optimization для дополнительного уменьшения размера
 codegen-units = 1    # Меньше параллелизма, зато лучше оптимизация
 strip = "symbols"  # Убираем отладочную информацию
